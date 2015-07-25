@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+  Submit a list of your students and class picker will randomly choose one without replacement.<br>
+  Separate students by commas.<br>
+  In the future, you will also be able to choose groups for your class.<br><br>
+
+  {% if studentlist %}
+    Your students are:<br>
+    {{ studentlist }}<br><br>
+    Your random student is: <br>
+    <p>{{ randomstudent}}</p>
+  {% else %}
+  <form action="." method="POST">
+    <input type="text" name="students-list">
+    <input type="submit" name="my-form" value="Send">
+  </form>
+  {% endif %}
+
+{% endblock %}
