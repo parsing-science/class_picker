@@ -10,5 +10,5 @@ I plan to add more enhancements in the future including:
 - A grouping feature that will select subgroups of size n from the list of students.
 
 # Getting Started
-Download the files. 
-In the command line, go to the main folder and type python run.py
+1) Download the files: either by cloning this git repo or downloading the zip file
+2)In the command line, go to the main folder and type ./run.py
