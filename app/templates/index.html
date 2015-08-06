@@ -9,10 +9,13 @@
     {{ studentlist }}<br><br>
     Your random student is: <br>
     <p>{{ randomstudent}}</p>
+  <form action="." method="POST">
+    <input type="submit" name="new-student" value="Choose another student">
+  </form>
   {% else %}
   <form action="." method="POST">
     <input type="text" name="students-list">
-    <input type="submit" name="my-form" value="Send">
+    <input type="submit" name="my-form" value="Submit">
   </form>
   {% endif %}
 
